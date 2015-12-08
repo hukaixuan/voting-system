@@ -1,7 +1,7 @@
 <?php 
 	//数据库连接类，得到一个数据库连接对象
 function db_connect(){
-	$conn = new mysqli('localhost','root','hkx1008','vote');
+	$conn = new mysqli('localhost','root','123456','vote');  //改为自己的用户名，密码，数据库名
 	if ( !$conn ) {
 		throw new Exception('连接数据库失败 ');
 	} else {
